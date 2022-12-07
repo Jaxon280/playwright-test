@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Percy Test
-        run: percy exec -- playwright test --reporter=dot
+        run: npm test
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
